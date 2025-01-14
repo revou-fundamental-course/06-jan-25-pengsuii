@@ -61,3 +61,34 @@ h2 {
     margin-top: 20px;
     color: #007BFF;
 }
+
+.headquarter {
+    display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+    justify-content: space-around; /* Menyebar elemen secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+}
+
+.location {
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.ImgLoc {
+    width: 100px; /* Atur ukuran sesuai kebutuhan */
+    height: 100px; /* Atur ukuran sesuai kebutuhan */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+label {
+    display: block; /* Membuat label menjadi blok agar berada di baris terpisah */
+    margin: 10px 0; /* Memberikan jarak atas dan bawah */
+    font-weight: bold; /* Membuat teks label menjadi tebal */
+    color: #333; /* Mengatur warna teks */
+}
+
+.ImgLoc {
+    width: 100px; /* Atur ukuran sesuai kebutuhan */
+    height: 100px; /* Atur ukuran sesuai kebutuhan */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}

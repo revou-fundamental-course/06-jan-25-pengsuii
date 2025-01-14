@@ -22,16 +22,45 @@
     <img src="/assets/photo-banner.jpg" alt="Banner" class="banner">
 
     <h1 id="welcome-message">Hi, Welcome To Website</h1>
-    <input type="text" id="name" placeholder="Masukkan nama Anda">
-    <button onclick="updateGreeting()">Kirim</button>
     
-    <p>Ini adalah website latihan pertama</p>
-    
-    <form onsubmit="return validateForm()">
+    <h2>Our Headquarter</h2>
+    <div class="headquarter">
+        <div class="location">
+            <img src="/assets/jakarta.jpg" alt="Jakarta" class="ImgLoc">
+            <p>Jakarta</p>
+        </div>
+        <div class="location">
+            <img src="/assets/bandung.jpg" alt="Bandung" class="ImgLoc">
+            <p>Bandung</p>
+        </div>
+        <div class="location">
+            <img src="/assets/surabaya.jpg" alt="Surabaya" class="ImgLoc">
+            <p>Surabaya</p>
+        </div>
+    </div>
+
+    <h2>Message Us</h2>
+    <form onsubmit="return validateForm(event)">
+        <label for="name">Nama Anda:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="birthdate">Tanggal Lahir:</label>
+        <input type="date" id="birthdate" required>
+
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="gender" value="Laki-Laki" required>Laki-Laki
+        <input type="radio" name="gender" value="Perempuan" required>Perempuan
+
         <label for="message">Pesan Anda:</label>
         <textarea id="message" required></textarea>
-        <button type="submit">Kirim Pesan</button>
+        
+        <button type="submit">Kirim</button>
     </form>
+
+    <div id="output" style="border: 1px solid #000; padding: 10px; margin-top: 10px;">
+        <h3>Pesan:</h3>
+        <p id="displayData"></p>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
